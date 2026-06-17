@@ -3,6 +3,7 @@
 import sqlite3
 import struct
 import os
+from subprocess import run
 from pathlib import Path
 
 DB_FILE = "ovidhan.db"
@@ -78,6 +79,8 @@ with open(DICT_FILE, "wb") as dictfp:
 
         offset += len(article_bytes)
 
+run(f"dictzip {DICT_FILE}", shell=True, check=True)
+
 with open(IDX_FILE, "wb") as fp:
     for item in idx_entries:
         fp.write(item)
@@ -103,5 +106,5 @@ print("Synonyms:", len(syn_entries))
 print("Generated:")
 print(" ", IFO_FILE)
 print(" ", IDX_FILE)
-print(" ", DICT_FILE)
+print(" ", DICT_FILE + ".dz")
 print(" ", SYN_FILE)

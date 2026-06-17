@@ -5,9 +5,9 @@ used with anything that supports the StarDict format.
 
 The data is located in the file `ovidhan.db`, which is an SQLite database.
 
-The script `convert.py` and the website [dictz.github.io](https://dictz.github.io) are then used to generate the files
-inside the `stardict` directory. One can directly copy that directory inside `<koreader>/data/dict` to use it in
-KOReader.
+The script `convert.py` is then used to generate the files inside the `stardict` directory.
+Make sure to have `dictzip` installed in your system. (On Arch, it's provided by the package `dictd`.)
+One can directly copy that directory inside `<koreader>/data/dict` to use it in KOReader.
 
 An alternative dictionary is located inside `alt`, but it has a different schema, and I offer no scripts for conversion.
 
