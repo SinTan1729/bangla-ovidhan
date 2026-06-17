@@ -46,13 +46,13 @@ with open(DICT_FILE, "wb") as dictfp:
             continue
 
         labels = [
-            "Pronunciation",
-            "Origin Language",
-            "Etymology",
-            "Part of Speech",
-            "Meaning",
-            "Examples",
-            "English Meaning",
+            "উচ্চারণ",  # Pronunciation
+            "ভাষাগত উৎস",  # Origin Language
+            "শব্দমূল",  # Etymology
+            "শব্দের শ্রেণি",  # Part of Speech
+            "অর্থ",  # Meaning
+            "উদাহরণ",  # Examples
+            "ইংরেজি অর্থ",  # English Meaning
         ]
 
         article_lines = []
