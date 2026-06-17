@@ -1,0 +1,2 @@
+alt/dictionary.db filter=lfs diff=lfs merge=lfs -text
+ovidhan.db filter=lfs diff=lfs merge=lfs -text
